@@ -1,0 +1,38 @@
+.backgroundImgDiv {
+  background-color: rgb(183, 210, 223);
+  min-height: 95vh;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  padding-top: 6rem;
+  margin-left: 0;
+
+
+  h1 {
+    color: rgb(30, 64, 81);
+  }
+
+}
+
+.blockchain-bottom {
+  height: 100;
+  width: 100px;
+  position: absolute;
+  bottom: 35%;
+  left: 10%;
+}
+
+.blockchain-top {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 200px;
+  right: 50px;
+
+}
+
+.app-img {
+  height: 250px;
+  width: 250px;
+  
+}

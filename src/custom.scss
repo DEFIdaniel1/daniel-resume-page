@@ -1,0 +1,84 @@
+$theme-colors: (
+  "primary": #4e708b,
+  "secondary": #4090a0
+);
+
+// BootStrap
+@import '~bootstrap/scss/bootstrap.scss';
+
+//Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap');
+
+//Font Awesome Icons
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: montserrat, sans-serif;
+  background: #1f1f1f;
+  font-size: 1.4em;
+}
+
+h1 {
+  font-family: ubuntu;
+  font-weight: 600;
+  padding: 30px;
+}
+
+h2 {
+  font-family: noto sans;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+    background-color: rgb(54, 54, 54);
+    color: white;
+}
+
+.img-about {
+  min-height: fit-content;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.img-logos {
+  max-height: 200px;
+  max-width: 300px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  align-items: center;
+}
+
+.img-portfolio {
+  min-height: fit-content;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+  :hover {
+  background-color: hsl(206, 27%, 38%);
+  background-blend-mode: multiply;
+  }
+
+}
+
+.align-right {
+  text-align: right;
+}
+
+.bg-gray {
+  background-color: rgb(232, 232, 232);
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
