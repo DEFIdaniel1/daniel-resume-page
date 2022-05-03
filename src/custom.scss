@@ -1,17 +1,17 @@
 $theme-colors: (
   "primary": #4e708b,
-  "secondary": #4090a0
+  "secondary": #4090a0,
 );
 
+$btn-padding-x: 10px;
+$btn-padding-y: 10px;
+
 // BootStrap
-@import '~bootstrap/scss/bootstrap.scss';
+@import "~bootstrap/scss/bootstrap.scss";
 
 //Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap');
-
-//Font Awesome Icons
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap");
 
 * {
   box-sizing: border-box;
@@ -26,20 +26,42 @@ html {
 h1 {
   font-family: ubuntu;
   font-weight: 600;
-  padding: 30px;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 
 h2 {
   font-family: noto sans;
+  font-weight: 600;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+h3 {
+  padding-top: 1rem;
+  color: hsl(219, 34%, 50%);
+}
+
+h5 {
+  color: hsl(0, 0%, 35%);
+}
+
+h6 {
+  font-family: ubuntu;
+  color: hsl(219, 34%, 50%);
 }
 
 body {
   margin: 0;
 }
 
+p {
+  color: #838383;
+}
+
 .header {
-    background-color: rgb(54, 54, 54);
-    color: white;
+  background-color: rgb(54, 54, 54);
+  color: white;
 }
 
 .img-about {
@@ -51,8 +73,8 @@ body {
 }
 
 .img-logos {
-  max-height: 200px;
-  max-width: 300px;
+  max-height: 150px;
+  max-width: 250px;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 1rem;
@@ -67,18 +89,35 @@ body {
   padding-bottom: 5%;
 
   :hover {
-  background-color: hsl(206, 27%, 38%);
-  background-blend-mode: multiply;
+    background-color: hsl(206, 27%, 38%);
+    background-blend-mode: multiply;
   }
-
 }
 
 .align-right {
   text-align: right;
 }
 
-.bg-gray {
+.button {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.exp-icon {
+  color: hsl(219, 34%, 50%);
+  margin-right: 20px;
+}
+
+//SECTIONS
+.gray-section {
   background-color: rgb(232, 232, 232);
-  padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding: 5% 12%;
+
+  p {
+    color: rgb(124, 124, 124);
+  }
+}
+
+.white-section {
+  padding: 3% 12%;
 }
