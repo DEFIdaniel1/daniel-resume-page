@@ -3,9 +3,12 @@ import { Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faBriefcase, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 
+import TransitionPage from "../UI/TransitionPage";
+
 const Experience = () => {
   return (
     <>
+    <TransitionPage title="Skills, experience, and education..."/>
       <section className="experience-section">
         <h1>Experience & Skills</h1>
         <Row>

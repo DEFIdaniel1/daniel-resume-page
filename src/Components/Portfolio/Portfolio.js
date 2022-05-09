@@ -2,6 +2,7 @@ import React from "react";
 import { Row } from "react-bootstrap";
 
 import WebApp from "./WebApp";
+import TransitionPage from "../UI/TransitionPage";
 
 import portfolioSiteImg from "../../images/web-images/portfolioSite.png";
 import myOctagoImg from "../../images/web-images/myOctago.png";
@@ -23,17 +24,17 @@ const Portfolio = () => {
     moreInfo:
       "This site was built from the ground-up to organize my portfolio in an intuitive way.",
   };
-  
-    const myOctagoApp = {
-      title: "myOctago Website",
-      description: "Fully functioning website for my eCommerce business.",
-      build: "Built with wooCommerce",
-      gitLink: "",
-      appLink: "http://daniel-pisterzi.web.app",
-      img: myOctagoImg,
-      moreInfo:
-        "A website fully built with wooCommerce. Integrates with Stripe, automated delivery services, and more. All creatives, photography, video were all done by me.",
-    };
+
+  const myOctagoApp = {
+    title: "myOctago Website",
+    description: "Fully functioning website for my eCommerce business.",
+    build: "Built with wooCommerce",
+    gitLink: "",
+    appLink: "http://daniel-pisterzi.web.app",
+    img: myOctagoImg,
+    moreInfo:
+      "A website fully built with wooCommerce. Integrates with Stripe, automated delivery services, and more. All creatives, photography, video were all done by me.",
+  };
 
   const reduxCartApp = {
     title: "Redux Cart",
@@ -86,7 +87,8 @@ const Portfolio = () => {
     gitLink: "https://github.com/DEFIdaniel1/quote-monkey",
     appLink: "https://pisterzi-quote.web.app/quotes",
     img: quoteMonkeyImg,
-    moreInfo: "React-router-based app that uses lazy-loading and loading spinners between state. Quotes and comments are saved and retrieved via Firebase API."
+    moreInfo:
+      "React-router-based app that uses lazy-loading and loading spinners between state. Quotes and comments are saved and retrieved via Firebase API.",
   };
 
   const toDoDatabaseTS = {
@@ -96,29 +98,33 @@ const Portfolio = () => {
     gitLink: "https://github.com/DEFIdaniel1/typescript-app",
     appLink: "https://pisterzi-typescript-db",
     img: toDoDatabaseTSImg,
-    moreInfo: "A todo app built with TypeScript and react. Ties into Firebase database via API."
+    moreInfo:
+      "A todo app built with TypeScript and react. Ties into Firebase database via API.",
   };
 
   return (
-    <section className="white-section text-center">
-      <section className="section">
-        <h1>Portfolio</h1>
-        <Row>
-          <WebApp app={superMealsApp} />
-          <WebApp app={quoteMonkeyApp} />
-          <WebApp app={portfolioSiteApp} />
-          <WebApp app={myOctagoApp} />
-          <WebApp app={toDoDatabaseApp} />
-          <WebApp app={toDoDatabaseTS} />
-          <WebApp app={reduxCartApp} />
-          <WebApp app={expenSnapApp} />
-        </Row>
+    <>
+      <TransitionPage title="A few things I've worked on..." />
+      <section className="white-section text-center">
+        <section className="section">
+          <h1>Portfolio</h1>
+          <Row>
+            <WebApp app={superMealsApp} />
+            <WebApp app={quoteMonkeyApp} />
+            <WebApp app={portfolioSiteApp} />
+            <WebApp app={myOctagoApp} />
+            <WebApp app={toDoDatabaseApp} />
+            <WebApp app={toDoDatabaseTS} />
+            <WebApp app={reduxCartApp} />
+            <WebApp app={expenSnapApp} />
+          </Row>
+        </section>
+        <section className="section">
+          <h3>Coming soon....</h3>
+          <h4>Blockchain dApps</h4>
+        </section>
       </section>
-      <section className="section">
-        <h3>Coming soon....</h3>
-        <h4>Blockchain dApps</h4>
-      </section>
-    </section>
+    </>
   );
 };
 

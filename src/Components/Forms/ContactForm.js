@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Button, Container } from "react-bootstrap";
 
+import TransitionPage from "../UI/TransitionPage";
 import "./Contact.scss";
 import emailjs from 'emailjs-com';
 
@@ -26,6 +27,7 @@ const ContactForm = () => {
 
   return (
     <>
+      <TransitionPage title="Send me a message!"/>
       {!msgSent && (
         <Container className="form-contact text-center">
           <form onSubmit={submitHandler} ref={formRef}>
