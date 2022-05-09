@@ -1,7 +1,38 @@
 .card {
-  background: rgb(66, 66, 66);
-  padding: 1em;
-  color: white;
-  border-radius: 20px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  width: 230px;
+  height: 100px;
+  position: relative;
+  align-items: center;
+  align-self: center;
+  background: linear-gradient(rgb(41, 44, 56), rgb(56, 127, 148) 80%);
+  box-shadow: rgb(46 48 62) 0px 0.66px 0px 0px inset;
+  border-radius: 8px;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #ffee10;
+  transition: 0.5s;
+  transform: scale(0.9);
+  z-index: -1;
+}
+
+.card:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ffee10;
+  transition: ease-in 2s;
+}
+
+.card:hover {
+  color: #ffee10;
+  box-shadow: 0 0 5px #ffee10;
+  text-shadow: 0 0 5px #ffee10;
 }

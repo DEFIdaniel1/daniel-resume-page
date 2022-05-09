@@ -1,113 +1,121 @@
 import React from "react";
-import { Container, Image, Row, Col } from "react-bootstrap";
+import { Image, Row, Col } from "react-bootstrap";
+
+import "./About.scss";
+import Icon from '../UI/Icon';
+import IconSmall from "../UI/IconSmall";
+import TransitionPage from "../UI/TransitionPage";
 
 import browser from "../../images/browser-code.png";
 import blockchain from "../../images/blockchain.png";
-import cssHtml from "../../images/icons/cssHtml.png";
-import react from "../../images/icons/react.png";
-import solidity from "../../images/icons/solidity.png";
-import javscript from "../../images/icons/javascript.png";
-import bootstrap from "../../images/icons/bootstrap.png";
-import mongoDb from "../../images/icons/mongoDB.png";
-import redux from "../../images/icons/redux.png";
-import node from "../../images/icons/nodejs.png";
-import express from "../../images/icons/expressjs.png";
-import web3 from "../../images/icons/web3.png";
+import cssHtmlImg from "../../images/icons/cssHtml.png";
+import reactImg from "../../images/icons/react.png";
+import solidityImg from "../../images/icons/solidity.png";
+import javscriptImg from "../../images/icons/javascript.png";
+import bootstrapImg from "../../images/icons/bootstrap.png";
+import mongoDbImg from "../../images/icons/mongoDB.png";
+import reduxImg from "../../images/icons/redux.png";
+import nodeImg from "../../images/icons/nodejs.png";
+import expressImg from "../../images/icons/expressjs.png";
+import web3Img from "../../images/icons/web3.png";
+
+import gitImg from "../../images/icons/github-logo.png";
+import visualStudioImg from "../../images/icons/visualStudio.png";
+import firebaseImg from "../../images/icons/firebase.png";
+import wooCommerceImg from "../../images/icons/wooCommerce.png";
+import adobeCCImg from "../../images/icons/adobeCC.png";
+import finalCutImg from "../../images/icons/fcpLogo.png";
+
 
 const About = () => {
+  const javaScriptItem = { name: "JavaScript", img: javscriptImg };
+  const cssHtmlItem = { name: "HTML5 & CSS3", img: cssHtmlImg };
+  const reactItem = { name: "React", img: reactImg };
+  const reduxItem = { name: "Redux", img: reduxImg };
+  const bootstrapItem = { name: "Bootstrap", img: bootstrapImg };
+  const nodeItem = { name: "NodeJS", img: nodeImg };
+  const mongoDbItem = { name: "MongoDB", img: mongoDbImg };
+  const expressItem = { name: "ExpressJS", img: expressImg };
+  const web3Item = { name: "Web3JS", img: web3Img };
+  const solidityItem = { name: "Solidity", img: solidityImg };
+
+  const gitHub = { name: "GitHub", img: gitImg };
+  const visualStudio = { name: "Visual Studio", img: visualStudioImg };
+  const firebase = { name: "Firebase", img: firebaseImg };
+  const wooCommerce = { name: "wooCommerce", img: wooCommerceImg };
+  const adobeCC = { name: "Adobe CC", img: adobeCCImg };
+  const finalCut = { name: "Final Cut Pro", img: finalCutImg };
+
   return (
     <>
+      <TransitionPage title="A little bit about me..." />
       <section className="white-section">
-        <h1 className="text-center">A little bit about me...</h1>
-        <Row>
-          <Col md={8}>
-            <h3>Web apps are my passion</h3>
-            <p>Nothing is better than developing intuitive apps.</p>
-            <h5>Great user experience</h5>
-            <p>Easy enough for grandpa.</p>
-            <h5>Responsive & Reactive</h5>
-            <p>Fast. Mobile-friendly. Y'know - the usual.</p>
-            <h5>Did I say beautiful?</h5>
-            <p>Customized UIs.. gotta love it.</p>
-          </Col>
-          <Col md={4}>
-            <Image src={browser} className="img-about img-fluid" />
-          </Col>
-        </Row>
-        <br />
-        <br />
-        <Row>
-          <Col md={8}>
-            <h3>Blockchain apps have huge potential</h3>
-            <p>Speak to me about crypto projects and I may never shut up.</p>
-            <h5>Decentralized finance? </h5>
-            <p>Yes, please!</p>
-            <h5>dApps and Web3 projects?</h5>
-            <p>Oh yeah.</p>
-          </Col>
-          <Col md={4}>
-            <Image src={blockchain} className="img-about img-fluid" />
-          </Col>
+        <section className="section">
+          <Row>
+            <Col md={5}>
+              <Image src={browser} className="img-about img-fluid" />
+            </Col>
+            <Col md={7}>
+              <h3>Web apps are my passion</h3>
+              <p>Nothing is better than developing intuitive apps.</p>
+              <h5>Great user experience</h5>
+              <p>Easy enough for grandpa.</p>
+              <h5>Responsive & Reactive</h5>
+              <p>Fast. Mobile-friendly. Y'know - the usual.</p>
+              <h5>Did I say beautiful?</h5>
+              <p>Customized UIs.. gotta love it.</p>
+            </Col>
+          </Row>
+          <br />
+          <hr />
+          <Row>
+            <Col md={5}>
+              <Image src={blockchain} className="img-about img-fluid" />
+            </Col>
+            <Col md={7}>
+              <h3>Blockchain apps have huge potential</h3>
+              <p>Speak to me about crypto projects and I may never shut up.</p>
+              <h5>Decentralized finance?</h5>
+              <p>Yes, please!</p>
+              <h5>dApps and Web3 projects?</h5>
+              <p>Oh yeah.</p>
+            </Col>
+          </Row>
+        </section>
+      </section>
+      <section className="gray-section section">
+        <section className="section">
+          <h2 className="text-center">Do we speak the same language?</h2>
+          <p className="text-center">Some languages and frameworks I use:</p>
+        </section>
+        <section className="section">
+          <Row className="text-center mx-auto lg-icon-div">
+            <Icon icon={javaScriptItem} />
+            <Icon icon={cssHtmlItem} />
+            <Icon icon={reactItem} />
+            <Icon icon={reduxItem} />
+          </Row>
+        </section>
+        <Row className="text-center mx-auto sm-icon-div align-items-end">
+          <IconSmall icon={bootstrapItem} />
+          <IconSmall icon={mongoDbItem} />
+          <IconSmall icon={nodeItem} />
+          <IconSmall icon={expressItem} />
+          <IconSmall icon={web3Item} />
+          <IconSmall icon={solidityItem} />
         </Row>
       </section>
-      <Container fluid className="gray-section">
-        <br></br>
-        <h2 className="text-center">Do we speak the same language?</h2>
-        <p className="text-center">
-          Here are some languages and frameworks I use:
-        </p>
-        <br /> <br />
-        <Row className="text-center mx-auto">
-          <Col lg={3}>
-            <p>Javascript</p>
-            <Image src={javscript} className="img-logos" />
-          </Col>
-          <Col lg={3}>
-            <p>HTML5 & CSS</p>
-            <Image src={cssHtml} className="img-logos" />
-          </Col>
-          <Col lg={3}>
-            <p>React</p>
-            <Image src={react} className="img-logos" />
-          </Col>
-          <Col lg={3}>
-            <p>Redux</p>
-            <Image src={redux} className="img-logos" />
-          </Col>
+      <section className="blue-section">
+        <h2 className="text-center">Apps I love</h2>
+        <Row className="text-center mx-auto sm-icon-div">
+          <IconSmall icon={gitHub} />
+          <IconSmall icon={visualStudio} />
+          <IconSmall icon={firebase} />
+          <IconSmall icon={wooCommerce} />
+          <IconSmall icon={adobeCC} />
+          <IconSmall icon={finalCut} />
         </Row>
-        <br />
-        <br />
-        <br />
-        <Row className="text-center mx-auto ">
-          <Col lg={2}>
-            <p>Bootstrap</p>
-            <Image src={bootstrap} className="img-logos" />
-          </Col>
-          <Col lg={2}>
-            <p>MongoDB</p>
-            <Image src={mongoDb} className="img-logos" />
-          </Col>
-          <Col lg={2}>
-            <p>NodeJS</p>
-            <Image src={node} className="img-logos" />
-          </Col>
-          <Col lg={2}>
-            <p>ExpressJS</p>
-            <Image src={express} className="img-logos " />
-          </Col>
-          <Col lg={2}>
-            <p>Solidity</p>
-            <Image src={solidity} className="img-logos" />
-          </Col>
-          <Col lg={2}>
-            <p>Web3 JS</p>
-            <Image src={web3} className="img-logos" />
-          </Col>
-        </Row>
-        <br />
-        <br />
-      </Container>
-      <br />
+      </section>
     </>
   );
 };

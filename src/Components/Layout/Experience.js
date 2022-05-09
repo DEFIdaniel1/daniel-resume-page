@@ -6,7 +6,7 @@ import { faStar, faBriefcase, faGraduationCap } from "@fortawesome/free-solid-sv
 const Experience = () => {
   return (
     <>
-      <section className="gray-section">
+      <section className="experience-section">
         <h1>Experience & Skills</h1>
         <Row>
           <Col lg={5}>
@@ -16,12 +16,36 @@ const Experience = () => {
             </h3>
           </Col>
           <Col lg={7}>
-            <h5>Web Development</h5>
-            <p>Stuff I did.</p>
-            <h5>Photography & Videography</h5>
-            <p>Stuff I did.</p>
-            <h5>Project Management</h5>
-            <p>Stuff I did.</p>
+            <h5>Front-End Web Development (6 Months)</h5>
+            <ul>
+              <li>
+                Building websites with React, Redux, JavaScript, HTML, CSS
+              </li>
+              <li>Hosting and connecting websites to back-ends via Firebase</li>
+              <li>Creating functional web applications and crypto dApps</li>
+            </ul>
+            <h5>Web Design (5 Years)</h5>
+            <ul>
+              <li>Designing and maintaining eCommerce websites</li>
+              <li>Utilize WooCommerce and Shopify platforms</li>
+              <li>
+                Integrating sites with third-party apps for payment, taxes,
+                shipping
+              </li>
+            </ul>
+            <h5>Content Creation (5 Years)</h5>
+            <ul>
+              <li>Producing and editing photos and video for websites and </li>
+              <li>
+                Writing content for Search Engine Optimization (SEO) and
+                consumption
+              </li>
+            </ul>
+            <h5>Project Management (10 Years)</h5>
+            <ul>
+              <li>Producing and editing photos and video for websites and </li>
+              <li></li>
+            </ul>
           </Col>
         </Row>
         <hr></hr>

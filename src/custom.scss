@@ -1,10 +1,21 @@
+/*Colors:
+- Yellow: #C79F5A
+- Light Blue: #6487DD
+- Purple: #3A2365
+- Teal: #4A7684
+*/
+
 $theme-colors: (
-  "primary": #4e708b,
+  "primary": #3a2365,
   "secondary": #4090a0,
 );
 
 $btn-padding-x: 10px;
 $btn-padding-y: 10px;
+
+$accordion-button-color: #3A2365;
+$accordion-button-active-bg: #c8d8ff;
+$accordion-button-active-color: #6487dd;
 
 // BootStrap
 @import "~bootstrap/scss/bootstrap.scss";
@@ -24,6 +35,7 @@ html {
 }
 
 h1 {
+  color: #3a2365;
   font-family: ubuntu;
   font-weight: 600;
   padding-top: 2rem;
@@ -39,7 +51,7 @@ h2 {
 
 h3 {
   padding-top: 1rem;
-  color: hsl(219, 34%, 50%);
+  color: #3a2365;
 }
 
 h5 {
@@ -48,7 +60,7 @@ h5 {
 
 h6 {
   font-family: ubuntu;
-  color: hsl(219, 34%, 50%);
+  color: #3a2365;
 }
 
 body {
@@ -56,7 +68,10 @@ body {
 }
 
 p {
-  color: #838383;
+  color: #616161;
+}
+li {
+  color: #616161;
 }
 
 .header {
@@ -104,20 +119,22 @@ p {
 }
 
 .exp-icon {
-  color: hsl(219, 34%, 50%);
+  color: #3a2365;
   margin-right: 20px;
 }
 
 //SECTIONS
-.gray-section {
+.section {
+  margin: 1rem 0 1rem 0;
+  padding: 2rem 0 1rem 0;
+}
+
+.experience-section {
   background-color: rgb(232, 232, 232);
-  padding: 5% 12%;
+  margin: 1rem 0 1rem 0;
+  padding: 3% 7%;
 
   p {
     color: rgb(124, 124, 124);
   }
-}
-
-.white-section {
-  padding: 3% 12%;
 }
