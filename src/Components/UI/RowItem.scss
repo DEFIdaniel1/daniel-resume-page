@@ -1,6 +1,6 @@
 h5 {
   padding-bottom: 0.5rem;
-  padding-left: 2rem;
+  margin-left: 2rem;
   padding-top: 1rem;
 }
 
@@ -10,7 +10,9 @@ h5 {
   padding: 1rem 0;
 
   .img {
-    padding-right: 2rem;
+    align-items: center;
+    text-align: center;
+    width: 90px;
   }
   .text {
     text-align: left;

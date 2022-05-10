@@ -1,8 +1,9 @@
-.backgroundImgDiv {
-  min-height: 90vh;
+.hero-text {
+  min-height: fit-content;
+  max-height: fit-content;
   height: 100%;
   text-align: center;
-  padding-top: 6rem;
+  padding-top: 3rem;
   margin-left: 0;
 
   h1 {
@@ -18,6 +19,7 @@
       font-size: 3.5rem;
     }
   }
+
   h2 {
     color: rgb(203, 203, 203);
     padding-top: 0rem;
@@ -34,26 +36,11 @@
   }
 }
 
-.blockchain-bottom {
-  height: 100;
-  width: 100px;
-  position: absolute;
-  bottom: 35%;
-  left: 10%;
-}
-
-.blockchain-top {
-  height: 150px;
-  width: 150px;
-  position: absolute;
-  top: 200px;
-  right: 50px;
-}
-
 .app-img {
   height: 250px;
   width: 250px;
 }
+
 
 // Text Enter Animation
 .fade-in1 {
