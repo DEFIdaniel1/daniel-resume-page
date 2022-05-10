@@ -30,7 +30,7 @@ const Portfolio = () => {
     description: "Fully functioning website for my eCommerce business.",
     build: "Built with wooCommerce",
     gitLink: "",
-    appLink: "http://daniel-pisterzi.web.app",
+    appLink: "http://myoctago.com",
     img: myOctagoImg,
     moreInfo:
       "A website fully built for WooCommerce using Elementor Page Builder and customizations. Integrates with Stripe, automated delivery services, and more.",
@@ -40,7 +40,7 @@ const Portfolio = () => {
     title: "Redux Cart",
     description: "Redux persistent cart with UI feedback for cart additions.",
     build: "Built with React, Redux",
-    gitLink: "",
+    gitLink: "https://github.com/DEFIdaniel1/redux-cart",
     appLink: "http://pisterzi-reduxcart.web.app",
     img: reduxCartImg,
     moreInfo:
@@ -96,10 +96,10 @@ const Portfolio = () => {
     description: "Your go-to to-do app.",
     build: "Built with React, TypeScript",
     gitLink: "https://github.com/DEFIdaniel1/typescript-app",
-    appLink: "https://pisterzi-typescript-db",
+    appLink: "https://pisterzi-todo.web.app",
     img: toDoDatabaseTSImg,
     moreInfo:
-      "A todo app built with TypeScript and react. Ties into Firebase database via API.",
+      "A simple To Do app built with TypeScript and React. Ties into Firebase database via API.",
   };
 
   return (
