@@ -1,14 +1,15 @@
-import {Route, Routes} from 'react-router-dom';
+import { Route, Routes, useLocation } from "react-router-dom";
 
 import HeroImage from "./Components/Layout/HeroImage";
 import Header from "./Components/Layout/Header";
-import About from './Components/Layout/About';
+import About from "./Components/Layout/About";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Experience from "./Components/Layout/Experience";
 import ContactForm from "./Components/Forms/ContactForm";
 
-
 function App() {
+  const location = useLocation();
+
   return (
     <>
       <Header />
@@ -18,13 +19,13 @@ function App() {
           Test <i class="fa-solid fa-caret-down"></i>
         </h2>
       </Card> */}
-      <Routes>
-        <Route path="/" element={<HeroImage />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/experience" element={<Experience />} />
-        <Route path="/contact" element={<ContactForm />} />
-      </Routes>
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<HeroImage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/contact" element={<ContactForm />} />
+        </Routes>
     </>
   );
 }

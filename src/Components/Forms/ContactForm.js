@@ -27,18 +27,14 @@ const ContactForm = () => {
 
   return (
     <>
-      <TransitionPage title="Send me a message!"/>
+      <TransitionPage title="Send me a note!" />
       {!msgSent && (
         <Container className="form-contact text-center">
           <form onSubmit={submitHandler} ref={formRef}>
-            <h2>Contact me via carrier pigeon</h2>
+            <h2>Questions? Looking for a resume?</h2>
             <div>
               <label htmlFor="name">Name</label>
-              <input
-                type="text"
-                name="name"
-                placeholder="Your name"
-              />
+              <input type="text" name="name" placeholder="Your name" />
             </div>
             <div>
               <label htmlFor="">Email</label>
@@ -58,7 +54,7 @@ const ContactForm = () => {
               ></textarea>
             </div>
             <Button type="submit">
-              <i class="fa-solid fa-dove"></i> Fly away!
+              <i class="fa-solid fa-paper-plane"></i>  Send
             </Button>
           </form>
           <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -68,9 +64,9 @@ const ContactForm = () => {
         <Container className="form-contact text-center">
           <h3>Thank you!</h3>
           <h6>
-            <i class="fa-solid fa-dove"></i>
+            <i class="fa-solid fa-paper-plane"></i>
           </h6>
-          <p>Your pigeon should arrive shortly!</p>
+          <p>I will reply to you as soon as I can!</p>
         </Container>
       )}
     </>

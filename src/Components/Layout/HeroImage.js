@@ -32,7 +32,7 @@ const IntroImage = () => {
         <Row className="backgroundImgDiv">
           <Col md={3} sm={2} xs={1}>
             <div>
-              <h2 className="hover">
+              <h2 className="bracket-top">
                 <i class="fa-solid fa-chevron-left fa-2x"></i>
               </h2>
             </div>
@@ -45,7 +45,7 @@ const IntroImage = () => {
             <h2 className="fade-in2">...a blockchain and web app developer!</h2>
           </Col>
           <div>
-            <h2 className="hover">
+            <h2 className="bracket-bottom">
               <i class="fa-solid fa-chevron-right fa-2x"></i>
             </h2>
           </div>

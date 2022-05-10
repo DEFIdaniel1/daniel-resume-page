@@ -1,36 +1,36 @@
 .form-contact {
-    text-align: center;
-    align-self: center;
+  text-align: center;
+  align-self: center;
+  width: 100%;
+  padding: 2rem;
+  margin: 2 rem;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+
+  h2 {
+    background: #3a2365;
+    color: #ececec;
+    font-size: 1.25rem;
+    font-weight: 100;
+    padding: 20px;
+    margin: -30px -30px 10px -30px;
+  }
+
+  input,
+  textarea {
+    outline: none;
     width: 100%;
-    padding: 2rem;
-    margin: 2 rem;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    padding: 1%;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+	background-color: rgb(234, 234, 234);
+  }
 
-    h2{
-	background: #3A2365;
-	color: #ececec;
-	font-size: 1.25rem;
-	font-weight: 100;
-	padding: 20px;
-	margin: -30px -30px 10px -30px;
-}
 
-    input, textarea {
-	outline: none;
-	width: 100%;
-	padding: 1%;
-	border: none;
-	border-bottom: 1px solid #ddd;
-	background: transparent;
-	margin-bottom: 10px;
-	font-size: 0.8rem;
-}
-
-    label {
-        font-size: .8rem;
-        padding: 2% 2%;
-
-    }
-
-    
+  label {
+    font-size: 0.8rem;
+    padding: 2% 2%;
+  }
 }

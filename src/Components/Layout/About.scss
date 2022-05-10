@@ -1,5 +1,5 @@
 .gray-section {
-  background-color: #C79F5A;
+  background-color: #c79f5a;
   margin: 1rem 0 0rem 0;
   padding: 1rem 0 4rem 0;
   color: rgb(228, 228, 228);
@@ -10,7 +10,7 @@
 }
 
 .blue-section {
-  background-color: #4A7684;
+  background-color: #4a7684;
   margin: 0rem 0 1rem 0;
   padding: 1rem 0 6rem 0;
 
@@ -18,11 +18,24 @@
     color: rgb(228, 228, 228);
   }
   h2 {
-      padding: 4% 0;
-      color: rgb(228, 228, 228);
+    padding: 4% 0;
+    color: rgb(228, 228, 228);
   }
+
 }
 
 .white-section {
   padding: 1% 12% 3% 12%;
+    h3 {
+    padding-bottom: 1rem;
+  }
+}
+
+.img-about {
+  max-height: 90%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin: 0 2rem 0 0;
 }

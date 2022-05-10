@@ -2,7 +2,7 @@ import React from "react";
 import { Image, Row, Col } from "react-bootstrap";
 
 import "./About.scss";
-import Icon from '../UI/Icon';
+import Icon from "../UI/Icon";
 import IconSmall from "../UI/IconSmall";
 import TransitionPage from "../UI/TransitionPage";
 
@@ -25,7 +25,7 @@ import firebaseImg from "../../images/icons/firebase.png";
 import wooCommerceImg from "../../images/icons/wooCommerce.png";
 import adobeCCImg from "../../images/icons/adobeCC.png";
 import finalCutImg from "../../images/icons/fcpLogo.png";
-
+import RowItem from "../UI/RowItem";
 
 const About = () => {
   const javaScriptItem = { name: "JavaScript", img: javscriptImg };
@@ -56,14 +56,18 @@ const About = () => {
               <Image src={browser} className="img-about img-fluid" />
             </Col>
             <Col md={7}>
-              <h3>Web apps are my passion</h3>
-              <p>Nothing is better than developing intuitive apps.</p>
-              <h5>Great user experience</h5>
-              <p>Easy enough for grandpa.</p>
-              <h5>Responsive & Reactive</h5>
-              <p>Fast. Mobile-friendly. Y'know - the usual.</p>
-              <h5>Did I say beautiful?</h5>
-              <p>Customized UIs.. gotta love it.</p>
+              <h3 className="text-center">
+                I love building web applications that are
+              </h3>
+              <RowItem icon="fa-solid fa-eye" text="Great user experiences" />
+              <RowItem
+                icon="fa-solid fa-champagne-glasses"
+                text="Reactive and responsive"
+              />
+              <RowItem
+                icon="fa-solid fa-person-cane"
+                text="Easy enough for grandpa"
+              />
             </Col>
           </Row>
           <br />
@@ -73,12 +77,17 @@ const About = () => {
               <Image src={blockchain} className="img-about img-fluid" />
             </Col>
             <Col md={7}>
-              <h3>Blockchain apps have huge potential</h3>
-              <p>Speak to me about crypto projects and I may never shut up.</p>
-              <h5>Decentralized finance?</h5>
-              <p>Yes, please!</p>
-              <h5>dApps and Web3 projects?</h5>
-              <p>Oh yeah.</p>
+              <h3 className="text-center">Mention blockchains... </h3>
+              <h6 className="text-center">...and I may never shut up</h6>
+              <RowItem
+                icon="fa-solid fa-hammer"
+                text="New building possibilities"
+              />
+              <RowItem icon="fa-solid fa-handshake" text="dApps and Web3" />
+              <RowItem
+                icon="fa-solid fa-laptop"
+                text="A decentralized future"
+              />
             </Col>
           </Row>
         </section>
