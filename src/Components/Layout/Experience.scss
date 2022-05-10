@@ -1,10 +1,16 @@
 .experience-section {
   background-color: rgb(232, 232, 232);
-  margin: 1rem 0 1rem 0;
   padding: 3% 7%;
+
+  h4 {
+    font-size: 1.2rem;
+    color: rgb(89, 89, 89);
+  }
 
   p {
     color: rgb(124, 124, 124);
+    padding: 0 0;
+    margin: 0 0;
   }
 
   li {
@@ -12,5 +18,30 @@
   }
   ul {
     margin-left: 40px;
+  }
+}
+
+.exp-icon {
+  color: #3a2365;
+  margin-right: 20px;
+}
+
+.company-name {
+  margin-left: 20px;
+}
+.work-div {
+  margin: 1rem 0 0 0;
+}
+.ed-div {
+  margin: 1rem 0 0 0;
+}
+.cert-div {
+  margin: 2rem 0 1rem 0;
+
+  h6 {
+    margin-top: 1.5rem;
+  }
+  p {
+      padding-left: 25px;
   }
 }

@@ -9,7 +9,7 @@ import myOctagoImg from "../../images/web-images/myOctago.png";
 import superMealsImg from "../../images/web-images/supermeals.png";
 import reduxCartImg from "../../images/web-images/reduxCart.png";
 import expenSnapImg from "../../images/web-images/expenSnap.png";
-import toDoDatabaseImg from "../../images/web-images/toDoDatabase.png";
+// import toDoDatabaseImg from "../../images/web-images/toDoDatabase.png";
 import quoteMonkeyImg from "../../images/web-images/quoteMonkey.png";
 import toDoDatabaseTSImg from "../../images/web-images/typescript-todo.png";
 
@@ -18,11 +18,11 @@ const Portfolio = () => {
     title: "This Website",
     description: "Of course!",
     build: "Built with React",
-    gitLink: "",
-    appLink: "http://daniel-pisterzi.web.app",
+    gitLink: "https://github.com/DEFIdaniel1/daniel-resume-page",
+    appLink: "",
     img: portfolioSiteImg,
     moreInfo:
-      "This site was built from the ground-up to organize my portfolio in an intuitive way.",
+      "This site was built from the ground-up to organize my portfolio. It uses custom React Router transitions and CSS for interesting effects.",
   };
 
   const myOctagoApp = {
@@ -33,7 +33,7 @@ const Portfolio = () => {
     appLink: "http://daniel-pisterzi.web.app",
     img: myOctagoImg,
     moreInfo:
-      "A website fully built with wooCommerce. Integrates with Stripe, automated delivery services, and more. All creatives, photography, video were all done by me.",
+      "A website fully built for WooCommerce using Elementor Page Builder and customizations. Integrates with Stripe, automated delivery services, and more.",
   };
 
   const reduxCartApp = {
@@ -69,16 +69,16 @@ const Portfolio = () => {
       "Add expense items and filter by year. This data feeds into the bar graph based on expense-by-month. Not persistent - refreshes on reload.",
   };
 
-  const toDoDatabaseApp = {
-    title: "To Do Database!",
-    description: "Your to do list saved to the cloud.",
-    build: "Built with React",
-    gitLink: "https://github.com/DEFIdaniel1/tasks-database",
-    appLink: "https://pisterzi-todo.web.app",
-    img: toDoDatabaseImg,
-    moreInfo:
-      "Add to do items to an ongoing list. All items will save to a Firebase backend via API.",
-  };
+  // const toDoDatabaseApp = {
+  //   title: "To Do Database!",
+  //   description: "Your to do list saved to the cloud.",
+  //   build: "Built with React",
+  //   gitLink: "https://github.com/DEFIdaniel1/tasks-database",
+  //   appLink: "https://pisterzi-todo.web.app",
+  //   img: toDoDatabaseImg,
+  //   moreInfo:
+  //     "Add to do items to an ongoing list. All items will save to a Firebase backend via API.",
+  // };
 
   const quoteMonkeyApp = {
     title: "Quote Monkey",
@@ -106,19 +106,15 @@ const Portfolio = () => {
     <>
       <TransitionPage title="A few things I've worked on..." />
       <section className="white-section text-center">
-        <section className="section">
-          <h1>Portfolio</h1>
-          <Row>
-            <WebApp app={superMealsApp} />
-            <WebApp app={quoteMonkeyApp} />
-            <WebApp app={portfolioSiteApp} />
-            <WebApp app={myOctagoApp} />
-            <WebApp app={toDoDatabaseApp} />
-            <WebApp app={toDoDatabaseTS} />
-            <WebApp app={reduxCartApp} />
-            <WebApp app={expenSnapApp} />
-          </Row>
-        </section>
+        <Row>
+          <WebApp app={portfolioSiteApp} />
+          <WebApp app={myOctagoApp} />
+          <WebApp app={superMealsApp} />
+          <WebApp app={quoteMonkeyApp} />
+          <WebApp app={reduxCartApp} />
+          <WebApp app={expenSnapApp} />
+          <WebApp app={toDoDatabaseTS} />
+        </Row>
         <section className="section">
           <h3>Coming soon....</h3>
           <h4>Blockchain dApps</h4>

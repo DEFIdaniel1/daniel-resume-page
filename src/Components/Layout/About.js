@@ -57,7 +57,7 @@ const About = () => {
             </Col>
             <Col md={7}>
               <h3>
-                Web applications should be
+                I love creating web apps that are:
               </h3>
               <RowItem icon="fa-solid fa-eye" text="A great user experience" />
               <RowItem
