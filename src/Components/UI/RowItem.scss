@@ -7,6 +7,12 @@ h5 {
 .content-row {
   color: #6444a1;
   align-items: center;
-  text-align: center;
   padding: 1rem 0;
+
+  .img {
+    padding-right: 2rem;
+  }
+  .text {
+    text-align: left;
+  }
 }

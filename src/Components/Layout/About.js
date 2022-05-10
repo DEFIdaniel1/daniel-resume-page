@@ -56,10 +56,10 @@ const About = () => {
               <Image src={browser} className="img-about img-fluid" />
             </Col>
             <Col md={7}>
-              <h3 className="text-center">
-                I love building web applications that are
+              <h3>
+                Web applications should be
               </h3>
-              <RowItem icon="fa-solid fa-eye" text="Great user experiences" />
+              <RowItem icon="fa-solid fa-eye" text="A great user experience" />
               <RowItem
                 icon="fa-solid fa-champagne-glasses"
                 text="Reactive and responsive"
@@ -77,8 +77,7 @@ const About = () => {
               <Image src={blockchain} className="img-about img-fluid" />
             </Col>
             <Col md={7}>
-              <h3 className="text-center">Mention blockchains... </h3>
-              <h6 className="text-center">...and I may never shut up</h6>
+              <h3>I'm excited about blockchains... </h3>
               <RowItem
                 icon="fa-solid fa-hammer"
                 text="New building possibilities"

@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faBriefcase, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 
 import TransitionPage from "../UI/TransitionPage";
+import './Experience.scss'
 
 const Experience = () => {
   return (
