@@ -7,7 +7,7 @@ const LanguageItem = (props) => {
   const { name, img } = props.icon;
 
   return (
-    <Col lg={4}>
+    <Col lg={3}>
       <Image src={img} className="img-logos" />
       <p>{name}</p>
     </Col>
