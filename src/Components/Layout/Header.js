@@ -1,39 +1,35 @@
 import React from "react";
-import { Navbar, Nav } from "react-bootstrap";
-import {Link} from 'react-router-dom';
+import { Navbar, Nav, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 import "./Header.scss";
 
 const Header = () => {
   return (
     <section className="header">
-      <Navbar className="header" variant="dark" expand="md" fixed="top">
-        <Navbar.Brand href="/">Daniel Pisterzi</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <Nav.Item eventKey={1}>
-              <Nav.Link as={Link} className="item" to="/about">
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
+        <Container>
+          <Navbar.Brand as={Link} to="/">
+            Daniel Pisterzi
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="ms-auto">
+              <Nav.Link as={Link} to="/about">
                 About Me
               </Nav.Link>
-            </Nav.Item>
-            <Nav.Item eventKey={2}>
-              <Nav.Link className="item" to="/portfolio" as={Link}>
+              <Nav.Link as={Link} to="/portfolio">
                 Portfolio
               </Nav.Link>
-            </Nav.Item>
-            <Nav.Item eventKey={3}>
-              <Nav.Link className="item" to="/experience" as={Link}>
+              <Nav.Link as={Link} to="/experience">
                 Experience
               </Nav.Link>
-            </Nav.Item>
-            <Nav.Item eventKey={4}>
-              <Nav.Link className="item" to="/contact" as={Link}>
+              <Nav.Link as={Link} to="/contact">
                 Contact
               </Nav.Link>
-            </Nav.Item>
-          </Nav>
-        </Navbar.Collapse>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
       </Navbar>
     </section>
   );

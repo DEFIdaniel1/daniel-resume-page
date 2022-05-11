@@ -1,9 +1,25 @@
-
-.sm-icon-div{
-    width: 100%;
-    padding: 0.5rem 0 1rem 0;
+.sm-icon-div {
+  width: 100%;
+  padding: 0.5rem 0 1rem 0;
 }
 
-.lg-icon-div{
-    padding: 0.5rem 7% 0.5rem 7%;
+.lg-icon-div {
+  padding: 0.5rem 7% 0.5rem 7%;
+}
+
+.img-logos {
+  max-width: 250px;
+  max-height: 150px;
+
+  @media (min-width: 300px) {
+    font-size: 2.5rem;
+  }
+  @media (max-width: 1400px) {
+    max-width: 225px;
+    max-height: 125px;
+  }
+  @media (max-width: 100px) {
+    max-width: 200px;
+    max-height: 100px;
+  }
 }

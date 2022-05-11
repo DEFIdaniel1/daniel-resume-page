@@ -91,7 +91,7 @@ const About = () => {
           </Row>
         </section>
       </section>
-      <section className="gray-section section">
+      <section className="yellow-section section">
         <section className="section">
           <h2 className="text-center">Do we speak the same language?</h2>
           <p className="text-center">Some languages and frameworks I use:</p>
